@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sortByDate"
+        android:title="sort by date"
+        android:checkable="true"
+        android:checked="true"/>
+    <item
+        android:id="@+id/showGreen"
+        android:title="show green"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/showYellow"
+        android:icon="@drawable/ic_about_us"
+        android:title="show yellow"
+        android:checkable="true" />
+    <item
+        android:id="@+id/showRed"
+        android:icon="@drawable/ic_about_us"
+        android:title="show red"
+        android:checkable="true"/>
+</menu>

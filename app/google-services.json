@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196821728073",
+    "project_id": "passman-36412",
+    "storage_bucket": "passman-36412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196821728073:android:2d1a0b5a9508b94bc13898",
+        "android_client_info": {
+          "package_name": "com.soham.passman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196821728073-jlpnpgrgo5ujuenorj42k76s9cimbt3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5CPKi5AfLjt2ZrBsqN-A8ae3ya_4L7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196821728073-jlpnpgrgo5ujuenorj42k76s9cimbt3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

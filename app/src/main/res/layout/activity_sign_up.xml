@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity"
+    android:background="@color/dark_grey">
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtMasterPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgAppLogo"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        android:hint="Create Password"
+        app:hintTextColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/teal_200"
+        app:startIconDrawable="@drawable/ic_password"
+        app:boxStrokeColor="@color/teal_200"
+        app:endIconTint="@color/white"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/masterPasswordEdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@color/white"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtMasterPasswordAgain"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtMasterPassword"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        android:hint="Enter password again"
+        app:hintTextColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/teal_200"
+        app:startIconDrawable="@drawable/ic_password"
+        app:boxStrokeColor="@color/teal_200"
+        app:endIconTint="@color/white"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/masterPasswordAgainEdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@color/white"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtMasterPasswordAgain"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="10dp"
+        app:cardBackgroundColor="@color/dark_grey"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imgGoogleLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_google_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In with Google"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imgGoogleLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
